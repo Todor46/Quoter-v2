@@ -49,3 +49,7 @@ html{
 .quoteText{
   font-size: 1.6rem;
 }
+
+.quoteText::before, .quoteText::after {
+  content: "\"";
+}
