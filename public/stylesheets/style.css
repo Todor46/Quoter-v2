@@ -1,0 +1,50 @@
+
+html,body {
+  font: 14px "Open Sans", "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: #fafafa;
+}
+
+html{
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url('https://picsum.photos/1600/900/?random') center no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  height: 15px;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.title{
+  padding: 10px;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.quote {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quoteAuthor{
+  text-align: right;
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+.quoteAuthor::before{
+  content: '- ';
+}
+
+.quoteText{
+  font-size: 1.6rem;
+}

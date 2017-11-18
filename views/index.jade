@@ -1,0 +1,10 @@
+extends layout
+block head
+  script(type='text/javascript', src='/javascripts/jquery-3.2.1.min.js')
+
+block content
+  header
+    .title= title
+  .quote
+    .quoteText #{quoteText}
+    .quoteAuthor #{quoteAuthor}
