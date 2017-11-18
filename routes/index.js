@@ -14,7 +14,7 @@ function getRandomQuote(){
 router.get('/', function(req, res, next) {
   // Generate random quote on each get request
   getRandomQuote();
-  res.render('index', { title: 'Quoter' });
+  res.render('index', { title: 'quotr' });
 });
 
 module.exports = router;
