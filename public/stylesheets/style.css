@@ -61,3 +61,12 @@ html{
   background: #fff;
   top: 0;
 }
+
+.loaderTitle {
+  color: blue;
+  font-size: 3rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
