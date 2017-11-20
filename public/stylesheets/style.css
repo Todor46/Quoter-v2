@@ -62,11 +62,49 @@ html{
   top: 0;
 }
 
-.loaderTitle {
-  color: blue;
-  font-size: 3rem;
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .5;
+  }
+}
+
+.loaderContainer {
+
+  justify-content: center;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.loaderTitle {
+  opacity: 1;
+  color: blue;
+  font-size: 3rem;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.loader {
+  height: 30px;
+  width: 30px;
+  border: #ccc 2px solid;
+  border-top: blue 2px solid;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
