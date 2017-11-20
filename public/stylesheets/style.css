@@ -82,7 +82,7 @@ html{
 
 .loaderTitle {
   opacity: 1;
-  color: blue;
+  color: #9818db;
   font-size: 3rem;
   animation-name: pulse;
   animation-duration: 1.5s;
@@ -95,10 +95,10 @@ html{
 }
 
 .loader {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   border: #ccc 2px solid;
-  border-top: blue 2px solid;
+  border-top: #9818db 2px solid;
   border-radius: 50%;
   animation: spin 2s linear infinite;
   margin: auto;
